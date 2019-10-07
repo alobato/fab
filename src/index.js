@@ -18,12 +18,12 @@ export default styled(Button)`
   border-radius: 50%;
   box-shadow: rgba(0, 0, 0, 0.14) 0px 6px 10px 0px, rgba(0, 0, 0, 0.12) 0px 1px 18px 0px, rgba(0, 0, 0, 0.2) 0px 3px 5px -1px;
   display: flex; justify-content: center; align-items: center;
-  background-color: ${props => props.theme.colors.primary700};
-  color: ${props => props.theme.colors.white};
+  background-color: ${props => (props.theme && props.theme.color && props.theme.colors.primary700) ? props.theme.colors.primary700 : 'hsla(207, 73%, 57%, 1)'};
+  color: ${props => (props.theme && props.theme.color && props.theme.colors.white) ? props.theme.colors.white : 'white'};
   &:focus {
     outline: 0;
-    box-shadow: 0 0 0 3px ${props => props.theme.colors.primary200};
-    border: 1px solid ${props => props.theme.colors.primary400};
+    box-shadow: 0 0 0 3px ${props => (props.theme && props.theme.color && props.theme.colors.primary200) ? props.theme.colors.primary200 : 'hsla(202, 81%, 86%, 1)'};
+    border: 1px solid ${props => (props.theme && props.theme.color && props.theme.colors.primary400) ? props.theme.colors.primary400 : 'hsla(205, 79%, 66%, 1)'};
   }
   & > i {
     display: block;

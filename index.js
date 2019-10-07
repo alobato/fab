@@ -36,13 +36,13 @@ var Button = function Button(props) {
 };
 
 var _default = (0, _styledComponents["default"])(Button)(_templateObject(), function (props) {
-  return props.theme.colors.primary700;
+  return props.theme && props.theme.color && props.theme.colors.primary700 ? props.theme.colors.primary700 : 'hsla(207, 73%, 57%, 1)';
 }, function (props) {
-  return props.theme.colors.white;
+  return props.theme && props.theme.color && props.theme.colors.white ? props.theme.colors.white : 'white';
 }, function (props) {
-  return props.theme.colors.primary200;
+  return props.theme && props.theme.color && props.theme.colors.primary200 ? props.theme.colors.primary200 : 'hsla(202, 81%, 86%, 1)';
 }, function (props) {
-  return props.theme.colors.primary400;
+  return props.theme && props.theme.color && props.theme.colors.primary400 ? props.theme.colors.primary400 : 'hsla(205, 79%, 66%, 1)';
 });
 
 exports["default"] = _default;

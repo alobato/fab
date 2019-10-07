@@ -1,6 +1,6 @@
 {
   "name": "@alobato/fab",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Floating action button react component",
   "main": "index.js",
   "scripts": {
