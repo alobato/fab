@@ -1,6 +1,6 @@
 {
   "name": "@alobato/fab",
-  "version": "1.0.4",
+  "version": "2.0.0",
   "description": "Floating action button react component",
   "main": "index.js",
   "scripts": {
@@ -32,8 +32,8 @@
     "react-dom": "^16.8.0"
   },
   "dependencies": {
-    "styled-components": "^4.3.2",
-    "@alobato/button": "^1.0.5"
+    "styled-components": "^5.0.1",
+    "@alobato/button": "^2.0.0"
   },
   "bugs": {
     "url": "https://github.com/alobato/fab/issues"
